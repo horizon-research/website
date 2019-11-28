@@ -52,12 +52,23 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1 class="title">Resource-Guaranteed Deep Learning</h1>
+								<h1 class="title">Robust and Safe Machine Learning</h1>
 								<div class="midbmargin">
-                                  <p>Deep Neural Networks (DNN) are increasingly deployed in highly resource-constrained environments such as autonomous drones and wearable devices, which have specific energy budgets and/or real-time requirements. While lots of recent work has studied empirical techniques to reduce the energy consumption and latency of DNNs, our research is the first to propose an end-to-end DNN training framework that provides <span class="em">quantitative resource guarantees</span>. Our vision is that the strong resource-consumption guarantees lead to <span class="em">more predictable system behaviors with less variability</span>, and thus pave the way for DNNs deployment in mission-critical and resource-constrained environment.</p>
-<p>The key idea is to formulate the DNN training process as a <span class="em">constrained optimization</span> problem in which the resource budget imposes a previously unconsidered optimization constraint. The optimization problem could be accurately and efficiently solved using the rich theories in mathematical optimization, enabling rapid and automated software-hardware co-design. The constrained-optimization is feasible fundamentally because of the regular behaviors of DNN algorithms and the hardware architecture, which let system metrics such as latency, energy, and size be analytically or statistically modeled. We explore the expressiveness and accuracy of resource modeling, and investigate an optimization framework that leverages the models to maximize DNN accuracy while observing system constraints.</p>
+                                  <p>Deep Neural Networks (DNN), and machine learning in general, are not robust and can not be used in safety-critical systems. Perhaps the most infamous example is the fatal collision of a Tesla Model S with a tractor trailer, whose white side is mistaken for the brightly-lit sky by Tesla's Autopilot system. Beyond mission-critical scenarios such as autonomous driving, the robustness issue also obstructs the deployment of DNN in privacy/security-sensitive domains such as biometric authentication and even predicting crimes.</p>
+                                  <p>To accelerate the penetration of ML-enabled services, we must address ML's <span class="em">robustness and safety</span> — that is, how to architect ML systems that are robust against uncertainties and failures and to guarantee that they perform as intended without causing harmful behavior. Addressing the safety issue will involve close collaboration among different computing communities, and we believe computer architects must play a key role.</p>
+                                  <p>We work on improving the robustness and safety of machine learning in two ways. First, we believe that <span class="em">explainability and accountability </span>are the premise of robustness and safety. We propose new algorithmic frameworks to better explain why deep learning models fail and to detect adversarial samples efficiently at runtime so that proper countermeasures could be taken. Second, we build new training frameworks that provide <span class="em">quantitative resource guarantees</span>. Our vision is that the strong resource-consumption guarantees lead to more predictable system behaviors with less variability, and thus pave the way for DNNs deployment in mission-critical environment.</p>
                                 </div>
-								<h2 class="courses">Representative Publications</h2>
+								<h2 class="courses">Recent Publications</h2>
+								<h3><span class="em">Robust Deep Learning</span></h3>
+                                <div class="smallbmargin">
+                                    <a class="paperlink" href="pubs/cvpr19.pdf">Adversarial Defense Through Network Profiling Based Path Extraction</a><br>
+                                    [<span class="confname">CVPR 2019</span>] Yuxian Qiu, Jingwen Leng, Cong Guo, Quan Chen, Chao Li, Minyi Guo, Yuhao Zhu<br>
+                                </div>
+                                <div class="smallbmargin">
+                                    <a class="paperlink" href="pubs/ieeemicro17.pdf">Cognitive Computing Safety: The New Horizon for Reliability</a><br>
+                                    [<span class="confname">IEEE Micro 2017</span>] Yuhao Zhu, Vijay Janapa Reddi<br>
+                                </div>
+								<h3><span class="em">Resource-Guaranteeing Deep Learning</span></h3>
                                 <div class="smallbmargin">
                                     <a class="paperlink" href="https://openreview.net/forum?id=BylBr3C9K7">Energy-Constrained Compression for Deep Neural Networks via Weighted Sparse Projection and Layer Input Masking</a><br>
                                     [<span class="confname">ICLR 2019</span>] Haichuan Yang, Yuhao Zhu, Ji Liu<br>
